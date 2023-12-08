@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "cs_w06": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7264",
+      "launchBrowser": false
+    }
+  }
+}
