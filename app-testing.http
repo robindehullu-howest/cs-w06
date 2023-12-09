@@ -1,0 +1,30 @@
+// Get all children
+GET http://localhost:7071/api/children
+
+
+// Register a child
+POST http://localhost:7071/api/children/
+Content-Type: application/json
+
+{
+  "id": "K000001",
+  "name": "John Doe",
+  "firstName": "John",
+  "class": "Grade 5",
+  "emailOfParent": "john.doe@example.com"
+}
+
+
+// Register a meal for a child
+POST http://localhost:7071/api/children/K000001/meals
+Content-Type: application/json
+
+{
+  "choice": "HotMeal",
+}
+
+// Get all meals for a child
+GET http://localhost:7071/api/children/K000001/meals
+
+// Get all meals of a class
+GET http://localhost:7071/api/classes/Grade%5/meals
